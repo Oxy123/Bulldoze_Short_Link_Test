@@ -1,0 +1,93 @@
+html {
+    height: 100%;
+}
+body {
+    margin:0;
+    padding:0;
+    background: linear-gradient(#141e30, #243b55);
+    font-family: 'Source Code Pro', monospace;
+}
+
+
+/*TopBar Styles*/
+.topBar {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    background-color: #c18772;
+    padding: 10px;
+    color : #ffffff;
+}
+
+.logo{
+    align-self: center;
+    flex: 4;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.language{
+    align-self: center;
+    width: 80px;
+    margin-right: 10px;
+}
+.user-infos{
+    align-self: center;
+    justify-content: flex-end;
+    flex : 2;
+}
+
+
+
+.url-box{
+    display: flex;
+}
+
+.url-input{
+    flex : 4;
+    justify-self: center;
+    margin-right: 10px;
+}
+
+.shortify-button{
+    flex : 0.5;
+    justify-self: center;
+}
+
+
+
+
+/*Login & register Pages Styles*/
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: #c18772;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
