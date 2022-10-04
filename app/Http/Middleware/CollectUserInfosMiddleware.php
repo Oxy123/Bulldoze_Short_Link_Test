@@ -18,6 +18,15 @@ class CollectUserInfosMiddleware
     public function handle(Request $request, Closure $next)
     {
 
+        //Log
+
+        Log::channel("AccessInfo")->info("log d'accès",[
+            "temps d'accès" => Carbon::now(),
+            "Le lien accédé" => url()->full(),
+            "user_id" => Auth::id(),
+            "IP" => $request->ip(),
+            "user_agent" => request()->header('User-Agent')
+        ]);
         
         return $next($request);
     }
